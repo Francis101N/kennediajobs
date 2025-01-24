@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+.navlink{
+    color: black;
+}
+.navlink:hover{
+    color: #a1ca46;
+}
+.informationcont{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.informationcont a{
+    text-decoration: none;
+}
+.contact{
+    background: linear-gradient(360deg, #238653 0%, #A9CF46 100%);
+    padding: 10px 30px 10px 30px;
+}
+.signup{
+    color: #206e46;
+}
+.signup:hover{
+    background: linear-gradient(360deg, #238653 0%, #A9CF46 100%);
+    color: white;
+}
+main{
+    background-color: #206e46;
+}
+.applynow{
+    text-decoration: none;
+    color: #64c794;
+    background-color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.applynow:hover{
+    color: black;
+}
+.Verificationoffer{
+    padding: 70px 0px 50px 80px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+.createjobaccount{
+    padding: 70px 40px 0px 80px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+.green{
+    background-color: #206e46;
+    height: 100px;
+    width: 100px;
+    border-radius: 1000px;
+    position: relative;
+    bottom:175vh;
+    right: 70px;
+}
+.yellow{
+    background-color: #a1ca46;
+    height: 100px;
+    width: 100px;
+    border-radius: 1000px;
+    position: relative;
+    bottom:80vh;
+    right: 70px;
+}
+ article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 50px 250px 30px 250px;
+    font-size: 15px;
+    animation: slideIn 2s ease-in-out;;
+ }
+ @keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+ .articleheader{
+    color:#31b471 ;
+    font-size: 20px;
+ }
+ .articleparagh{
+    color: #94a69d;
+ }
+ .firstSection{
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2.5s ease-out;
+ }
+ .slideInForFirstSection{
+    opacity: 1;
+    transform: translateX(0);
+  }
+.jobinfo{
+    padding: 20px 50px 0px 80px; 
+}
+.appform{
+    padding: 20px 10px 0px 70px;
+}
+section h2{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #206e46;
+}
+section ul li{
+    padding: 10px;
+}
+input[type="text"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+input[type="email"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+input[type="number"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+input[type="password"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+input[type="date"]{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+}
+input[type="submit"]{
+    border-radius: 30px;
+    padding: 10px 30px 10px 30px;
+    color: white;
+    background: linear-gradient(360deg, #238653 0%, #A9CF46 100%);
+    border: none;
+}
+input:focus{
+    outline: none;
+}
+select{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 80%;
+    outline: none;
+}
+footer{
+    background-color: #206e46;
+    padding: 10px;
+    display: flex;
+}
+.footertext{
+    color: white;
+    flex: 90%;
+    padding: 15px 0px 0px 80px;
+}
+.socialmediaicons{
+    flex: 10%;
+    padding: 15px 80px 0px 0px;
+}
+.socialmediaicons a{
+    margin: 5px;
+    background-color: white;
+    color: #206e46;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+
+@media screen and (max-width:992px){
+    article{
+    padding: 40px 80px 0px 80px;
+    }
+    section{
+        padding: 0px 0px 0px 0px;
+    }
+    section h2{
+        font-size: 25px;
+    }
+    .green{
+        bottom:220vh;
+        right: 80px;
+    }
+    .yellow{
+        bottom:90vh;
+        right: 80px;
+    }
+    
+    footer{
+        padding: 10px;
+    }
+    .footertext{
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width:600px){
+  .Verificationoffer{
+    padding: 35px 0px 5px 55px;
+  }
+    .createjobaccount{
+        padding: 30px 0px 10px 55px;
+    }
+  article{
+    font: 10px;
+    padding: 40px 20px 0px 20px;
+  }
+  .articleheader{
+    font-size: 15px;
+  }
+  section{
+    padding: 0px 0px 0px 0px;
+  }
+  section h2{
+    font-size: 20px;
+}
+.jobinfo{
+    padding-left: 50px;
+}
+.appform{
+    padding-left: 55px;
+}
+.green{
+    position: relative;
+    bottom:385vh;
+    right: 80px;
+}
+.yellow{
+    position: relative;
+    bottom:180vh;
+    right: 80px;
+}
+footer{
+    margin-top: 0%;
+    padding: 10px;
+}
+.footertext{
+    font-size: 12px;
+    padding-left: 5px;
+    padding-top: 20px;
+    /* flex: 95%; */
+}
+.socialmediaicons{
+   padding-right: 20px;
+   /* flex: 5%; */
+}
+.socialmediaicons a{
+    padding: 5px;
+}
+}

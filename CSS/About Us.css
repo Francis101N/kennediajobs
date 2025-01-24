@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+.navlink{
+    color: black;
+}
+.navlink:hover{
+    color: #a1ca46;
+}
+.informationcont{
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+.informationcont a{
+    text-decoration: none;
+}
+.contact{
+    background: linear-gradient(360deg, #238653 0%, #A9CF46 100%);
+    padding: 10px 30px 10px 30px;
+}
+.signup{
+    color: #206e46;
+}
+.signup:hover{
+    background: linear-gradient(360deg, #238653 0%, #A9CF46 100%);
+    color: white;
+}
+main{
+    padding: 30px 0px 30px 50px;
+}
+main{
+    background-color: #206e46;
+    padding: 70px 0px 70px 80px;
+    color: white;
+}
+main h2{
+    animation: fadeIn 1.5s ease-in-out;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+.borderone{
+    border-left: 5px solid #a1ca46;
+    padding: 0px 30px 0px 15px;
+}
+.bordertwo{
+    border-left: 5px solid #a1ca46;
+    padding: 0px 0px 0px 15px;
+}
+.contone{
+    padding: 30px 10% 0px 10%;
+    font-size: 17px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1s ease-out;
+}
+ /* Class to apply the slide-in effect */
+ .slide-in {
+    opacity: 1;
+    transform: translateX(0);
+  }
+.conttwo{
+    padding-right: 10%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 1.5s ease-out;
+}
+.slideInForContTwo{
+    opacity: 1;
+    transform: translateX(0);
+  }
+.contthree{
+    padding-left: 15%;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2s ease-out;
+}
+.slideInForContThree{
+    opacity: 1;
+    transform: translateX(0);
+}
+.contfour{
+    padding: 30px 10% 0px 10%;
+    font-size: 15px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: all 2.5s ease-out;
+}
+.slideInForContFour{
+    opacity: 1;
+    transform: translateX(0);
+}
+.green{
+    background-color: #206e46;
+    height: 100px;
+    width: 100px;
+    border-radius: 1000px;
+    position: relative;
+    bottom:60vh;
+    right: 70px;
+}
+footer{
+    background-color: #206e46;
+    padding: 10px;
+    display: flex;
+}
+.footertext{
+    color: white;
+    flex: 90%;
+    padding: 15px 0px 0px 80px;
+}
+.socialmediaicons{
+    flex: 10%;
+    padding: 15px 80px 0px 0px;
+}
+.socialmediaicons a{
+    margin: 5px;
+    background-color: white;
+    color: #206e46;
+    padding: 8px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:992px){
+    main{
+        padding: 50px 0px 50px 50px;
+    }
+    section{
+        grid-template-columns: 50% 50%;
+    }
+  .contone{
+    padding: 10px 3px 0px 30px;
+  }
+  .borderone{
+    padding-right: 0px;
+  }
+  
+}
+
+@media screen and (max-width:600px){
+    main{
+        padding: 30px 0px 30px 50px;
+    }
+    section{
+        grid-template-columns: 500px;
+    }
+    .green{
+        position: relative;
+        bottom:210vh;
+        right: 80px;
+    }
+    .contone{
+        padding: 30px;
+    }
+    .contfour{
+        padding: 40px
+    }
+    footer{
+        margin-top: 0%;
+        padding: 10px;
+    }
+    .footertext{
+        font-size: 12px;
+        padding-left: 5px;
+        padding-top: 20px;
+    }
+    .socialmediaicons{
+       padding-right: 20px;
+    }
+    .socialmediaicons a{
+        padding: 5px;
+    }
+    .secimage{
+        padding: 10px;
+    }
+}
